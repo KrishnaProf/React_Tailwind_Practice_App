@@ -1,7 +1,7 @@
 import Reactimg from '../assets/Reactimg.png';
 import { GrLanguage} from 'react-icons/gr';
 import {useState} from 'react';
-import {FaBars, FaXMark} from 'react-icons/fa';
+import {FaBars} from 'react-icons/fa';
 
 const Navbar = () => {
     const [IsMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <div>
                     <button onClick={toggleMenu} className='text-white focus:outline-none focus:text-gray-300'>
                         {
-                            IsMenuOpen ? (<FaXMark />): (<FaBars className='w-6 h-6 text-primary' />)
+                            IsMenuOpen ? (''): (<FaBars className='w-6 h-6 text-primary' />)
                         }
                     </button>
                 </div>
